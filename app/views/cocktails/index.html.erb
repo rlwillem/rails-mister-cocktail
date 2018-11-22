@@ -1,0 +1,35 @@
+
+<div class="wrapper-home">
+<div class="container-home">
+<h1>Cocktails</h1>
+
+
+
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: url(<%= image_url(cocktail.image_url) %>);">
+        <div class="card-category"><%= cocktail.name %></div>
+        <div class="card-description">
+          <h2></h2>
+          <p></p>
+        </div>
+        <img class="card-user" src="">
+        <a class="card-link" href="#" ></a>
+    </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+<div>
+<%= link_to "ADD A COCKTAIL", new_cocktail_path,   { :class=>"stylish-button" } %>
+</div>
+
+
+</div>
+</div>

@@ -1,1 +1,23 @@
 // Specific CSS for your home-page
+.wrapper-home {
+  background-image: linear-gradient(rgba(55,59,68, 0.8),rgba(66,134,244,0.8) ), asset-url('background.jpg') ;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+.wrapper-home a {
+  color: white;
+
+}
+.container-home {
+  text-align: center;
+  height: 970px;
+  margin: 0 auto;
+}
+.container-home h1 {
+  font-size: 50px;
+  padding-top: 30px;
+  margin: 0;
+
+}
