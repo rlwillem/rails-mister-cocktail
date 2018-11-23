@@ -34,6 +34,9 @@ gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 gem 'sassc-rails'
 
+####### hosting and uploading pictures
+gem 'cloudinary', '~> 1.9.1'
+gem 'carrierwave', '~> 1.2'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

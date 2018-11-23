@@ -1,24 +1,28 @@
 // Specific CSS for your home-page
 .wrapper-home {
-  background-image: linear-gradient(rgba(55,59,68, 0.8),rgba(66,134,244,0.8) ), asset-url('background.jpg') ;
+  // background-image: linear-gradient(rgba(209, 145, 60, 1), rgba(255, 209, 148, 0.8)), asset-url('background.jpg');
+  background-image: linear-gradient(rgba(55, 59, 68, 0.8), rgba(66, 134, 244, 0.8)),
+    asset-url('background.jpg');
   background-position: center;
   background-size: cover;
   height: 100%;
   color: white;
 }
-.wrapper-home a {
-  color: white;
 
-}
 .container-home {
   text-align: center;
   height: 970px;
-  margin: 0 auto;
+  position: relative;
 }
+
 .container-home h1 {
   font-size: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
   margin: 0;
 
+}
+
+.button-home {
+  margin-top: 50px;
 }

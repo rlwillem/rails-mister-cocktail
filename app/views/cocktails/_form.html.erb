@@ -1,6 +1,22 @@
-<%= simple_form_for(@cocktail) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.input :image_url %>
-  <%= f.submit %>
-<% end %>
+<div class="form-align">
+  <%= simple_form_for(@cocktail) do |f| %>
+  <div>
+    <%= f.label :name %>
+  </div>
+  <div>
+    <%= f.text_field :name, class: 'name-form'%>
+  </div>
+  <div>
+    <label class="name-form">
+      Add a file!
+      <span style="display:none;">
+    <%= f.input :photo%>
+  </span>
+    </label>
+    <%= f.input :photo_cache, as: :hidden %>
+  </div>
+  <div>
+    <%= f.submit "Mix Cocktail", class: 'btn-form' %>
+  </div>
+  <% end %>
+</div>

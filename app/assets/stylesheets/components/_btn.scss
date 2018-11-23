@@ -1,6 +1,36 @@
 .stylish-button {
   border: 3px solid white;
+  background: white;
   border-radius: 6px;
   padding: 10px 15px;
+  color: black;
+  opacity: 0.8;
 
+
+}
+
+.stylish-button:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 1;
+
+}
+
+
+
+
+.btn-form {
+  border: 3px solid black;
+  border-radius: 6px;
+  padding: 10px 15px;
+  width: 200px;
+  margin-top: 30px;
+  background: black;
+  color: white;
+  opacity: 0.8;
+
+}
+
+.btn-form:hover {
+  opacity: 1;
 }
