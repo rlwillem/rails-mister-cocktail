@@ -5,23 +5,27 @@
       <div class="row">
         <% @cocktails.each do |cocktail| %>
         <div class="col-xs-12 col-sm-4">
+          <%if cocktail.photo.model["photo"] %>
           <div class="card" style="background-image: url('<%= cl_image_path cocktail.photo %>')">
-            <div class="card-category">
-              <%= cocktail.name %>
+            <%else %>
+            <div class="card" style="background-image: url('https://via.placeholder.com/150.png')">
+              <%end %>
+              <div class="card-category">
+                <%= cocktail.name %>
+              </div>
+              <div class="card-description">
+                <h2></h2>
+                <p></p>
+              </div>
+              <img class="card-user" src="">
+              <a class="card-link" href=<%= cocktail_path(cocktail) %> ></a>
             </div>
-            <div class="card-description">
-              <h2></h2>
-              <p></p>
-            </div>
-            <img class="card-user" src="">
-            <a class="card-link" href="#" ></a>
           </div>
+          <% end %>
         </div>
-        <% end %>
+      </div>
+      <div class="button-home">
+        <%= link_to "ADD A COCKTAIL", new_cocktail_path,   { :class=>"stylish-button" } %>
       </div>
     </div>
-    <div class="button-home">
-      <%= link_to "ADD A COCKTAIL", new_cocktail_path,   { :class=>"stylish-button" } %>
-    </div>
   </div>
-</div>
